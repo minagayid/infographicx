@@ -1,0 +1,1 @@
+"""InfographicX backend application package."""
