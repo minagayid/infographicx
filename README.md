@@ -52,6 +52,22 @@ InfographicX is an AI-powered platform that ingests unstructured and structured 
 | **Presentation Engine** | Transforms infographics into presentations, websites, reports, PDFs, videos, courses |
 | **Publishing Engine** | Theme selection, branding, multi-format export (HTML, PDF, PNG, SVG, PPTX, Website) |
 
+## God's Eye — open atlas layer
+
+God's Eye is a source-linked globe workspace for exploring real-world places without
+locking the product to a proprietary map or imagery vendor. It combines:
+
+- **OpenStreetMap** attribution-ready map context and coordinates.
+- **Wikimedia Commons** location searches for community-uploaded video and imagery.
+- **Internet Archive** searches for public archive footage and field recordings.
+- A lightweight catalog API at `GET /api/v1/gods-eye/catalog` with region and text
+  filters, plus `GET /api/v1/gods-eye/sources` for the provider/license contract.
+
+The frontend lives in `frontend/src/App.tsx` and provides a responsive atlas view,
+region filters, location pins, selected-place intelligence, and direct source/archive
+links. Media is not copied or re-hosted: each result links to its original archive so
+users can inspect the per-file license and attribution requirements before reuse.
+
 ## AI Agent Ecosystem
 
 | Agent | Role |

@@ -30,6 +30,7 @@ pnpm-debug.log*
 # Frontend build
 frontend/dist/
 frontend/.vite/
+*.tsbuildinfo
 
 # IDE
 .vscode/
